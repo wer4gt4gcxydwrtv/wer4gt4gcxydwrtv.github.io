@@ -1,861 +1,276 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>KrewOS — Self-Hosted AI Agent Crew &amp; Observatory</title>
-  <meta name="description" content="Run and coordinate a crew of autonomous AI specialists on your own infrastructure with your own LLM API keys. Isolated Linux terminals, live Chromium browsers, encrypted secret vault, and a live observatory in one hardened container." />
-  <meta name="theme-color" content="#07080f" />
-  <meta property="og:title" content="KrewOS — Self-Hosted AI Agent Crew &amp; Observatory" />
-  <meta property="og:description" content="Coordinate 1-on-1 specialists and multi-agent team rooms led by Helios, with isolated Linux workspaces, live Chromium co-browsing, an encrypted secret vault, and persistent memory in a single Distroless container." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://krewos.github.io/" />
-  <meta property="og:image" content="https://krewos.github.io/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="KrewOS — Self-Hosted AI Agent Crew and 3D Observatory" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="KrewOS — Self-Hosted AI Agent Crew &amp; Observatory" />
-  <meta name="twitter:description" content="Run an autonomous AI team on your own machine. Live 3D Observatory, isolated Linux terminals, live Chromium co-browsing, and BYOK in one hardened Distroless container." />
-  <meta name="twitter:image" content="https://krewos.github.io/og-image.png" />
-  <link rel="icon" type="image/svg+xml" href="logo.svg" />
-  <link rel="stylesheet" href="styles.css?v=3" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vesper - Native Content Hub for Windows | Download &amp; Setup Guide</title>
+<meta name="description" content="Vesper is a native content hub that keeps your articles, feeds, saved reads, and notes in one calm, organized place. Download Vesper for Windows and follow this simple, non-technical setup guide.">
+<meta name="keywords" content="Vesper, Vesper app, content hub, download Vesper, Vesper for Windows, reading app, news reader, content organizer, save articles, native app">
+<meta name="author" content="Vesper">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#5b4df0">
+<link rel="canonical" href="https://github.com/wer4gt4gcxydwrtv/Vesper">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vesper">
+<meta property="og:title" content="Vesper - All Your Content in One Calm Place">
+<meta property="og:description" content="A native content hub that gathers everything you read and save into a single, tidy library. Download Vesper for Windows using the official release page.">
+<meta property="og:url" content="https://github.com/wer4gt4gcxydwrtv/Vesper">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vesper - All Your Content in One Calm Place">
+<meta name="twitter:description" content="Download Vesper, a native content hub for organizing everything you read, follow, and save. Simple Windows setup guide included.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vesper",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "description": "Vesper is a native content hub that brings your articles, feeds, saved reading, and notes together in one organized library.",
+  "url": "https://github.com/wer4gt4gcxydwrtv/Vesper",
+  "downloadUrl": "https://github.com/wer4gt4gcxydwrtv/Vesper/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
 </head>
-<body>
-  <div class="starfield" aria-hidden="true"></div>
+<body style="margin:0;padding:0;background-color:#f4f6fa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#20293a;-webkit-font-smoothing:antialiased;">
 
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="#top" aria-label="KrewOS Home">
-        <img src="logo.svg" width="30" height="30" alt="" class="brand-logo" />
-        <span class="brand-name">KrewOS</span>
-        <span class="brand-tag">local-first</span>
-      </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#observatory">Observatory</a>
-        <a href="#architecture">Features</a>
-        <a href="#quickstart">Quickstart</a>
-        <a href="#sandbox">Security</a>
-        <a href="#config">Config</a>
-        <a href="#license">License</a>
-      </nav>
-      <div class="topbar-actions">
-        <a class="btn btn-ghost btn-sm" href="https://github.com/krewos/krewos" target="_blank" rel="noopener">
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
-          </svg>
-          <span>GitHub</span>
-        </a>
-        <a class="btn btn-primary btn-sm" href="demo.html">
-          <span>Live Demo ↗</span>
-        </a>
-      </div>
-    </div>
+<div style="max-width:920px;margin:0 auto;padding:0 20px 80px 20px;">
+
+  <header style="text-align:center;padding:64px 0 12px 0;">
+    <h1 style="font-size:44px;line-height:1.15;font-weight:800;letter-spacing:-1.2px;margin:0 0 18px 0;color:#121a29;">📚 Vesper - All Your Content in One Calm Place</h1>
+    <p style="font-size:19px;line-height:1.7;color:#4a5668;max-width:680px;margin:0 auto 34px auto;">Vesper is a native content hub that gathers everything you read, follow, and save into one tidy library — so you stop hunting through tabs, screenshots, and forgotten bookmarks. This page explains, in plain language, how to get Vesper running on your Windows computer.</p>
+
+    <a href="https://github.com/wer4gt4gcxydwrtv/Vesper/releases" style="display:inline-block;background:linear-gradient(135deg,#5b4df0 0%,#00bfa6 100%);color:#ffffff;text-decoration:none;font-size:20px;font-weight:700;padding:20px 46px;border-radius:14px;box-shadow:0 12px 28px rgba(91,77,240,0.34);letter-spacing:0.2px;">⬇️ Download Vesper</a>
+
+    <p style="font-size:15px;color:#6b7686;margin:20px 0 0 0;">Visit this link to download the application.</p>
   </header>
 
-  <main id="top">
-    <!-- Hero -->
-    <section class="hero container">
-      <div class="hero-copy">
-        <span class="section-kicker eyebrow">Self-Hosted AI Crew · Bring Your Own API Keys · Zero Cloud Lock-in</span>
-        <h1>Run an autonomous AI team on your own machine.</h1>
-        <p class="hero-lead">
-          <strong>KrewOS</strong> gives you a coordinated crew of AI specialists — complete with their own
-          isolated Linux terminals, live Chromium browsers, reusable skills, encrypted secret vault, and persistent memory — all
-          inside a single hardened container (<code>ghcr.io/krewos/krewos</code>) that you control 100%.
-        </p>
-        <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="demo.html">Try Live Demo ↗</a>
-          <a class="btn btn-ghost btn-lg" href="#quickstart">Deploy with Docker Compose</a>
-        </div>
-      </div>
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:34px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🧭 What Vesper Does</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Most people today read across a dozen different places. An article arrives in a chat message, a newsletter shows up in your inbox, a video link gets saved to your phone, and a recipe is bookmarked in a browser you rarely open. The result is a scattering of half-read things that you fully intend to come back to — and almost never do.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Vesper solves that by being your single destination. It is a content hub: one window where everything you want to keep lands in a clean, readable layout. Instead of asking you to learn a complicated system, Vesper asks you only one thing — put it in the library, and it stays there.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">Because Vesper is a native application rather than a website, it opens instantly, remembers exactly where you left off, and works smoothly even with thousands of saved items in your collection.</p>
+  </section>
 
-      <!-- Pure SVG/CSS Cosmic Orrery Illustration -->
-      <div class="hero-orrery" aria-label="KrewOS Observatory Diagram">
-        <svg viewBox="0 0 560 440" role="img" aria-label="Helios team lead surrounded by specialist agent orbits">
-          <defs>
-            <radialGradient id="voidCore" cx="50%" cy="50%" r="55%">
-              <stop offset="0%" stop-color="#1E1510" stop-opacity="0.95" />
-              <stop offset="55%" stop-color="#0E1120" stop-opacity="0.7" />
-              <stop offset="100%" stop-color="#07080F" stop-opacity="0" />
-            </radialGradient>
-            <radialGradient id="sunGlow" cx="45%" cy="45%" r="55%">
-              <stop offset="0%" stop-color="#FFF5D6" />
-              <stop offset="38%" stop-color="#FFB340" />
-              <stop offset="78%" stop-color="#E05A1B" />
-              <stop offset="100%" stop-color="#7A1C05" stop-opacity="0" />
-            </radialGradient>
-            <linearGradient id="ringAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#FFB340" stop-opacity="0.65" />
-              <stop offset="50%" stop-color="#8FD3FF" stop-opacity="0.25" />
-              <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.6" />
-            </linearGradient>
-          </defs>
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 18px 0;color:#121a29;">✨ Highlights at a Glance</h2>
+    <ul style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">One unified library.</strong> Articles, links, notes, and saved pages all live in the same place instead of five separate apps.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Distraction-free reading view.</strong> Vesper strips away ads, pop-ups, and clutter so you can actually finish what you started.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Smart collections.</strong> Group items by topic, project, or mood using simple folders and tags you create yourself.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Instant search.</strong> Type a few letters and find anything you saved months ago, even if you forgot the title.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Offline access.</strong> Content you have already opened stays readable without an internet connection.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Pick up where you left off.</strong> Vesper remembers your reading position in every single item.</li>
+      <li style="margin-bottom:0;"><strong style="color:#121a29;">Calm, uncluttered design.</strong> No flashing badges, no infinite scrolling traps, no algorithm deciding what you see next.</li>
+    </ul>
+  </section>
 
-          <circle cx="280" cy="220" r="210" fill="url(#voidCore)" />
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🚀 Download and Setup</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 20px 0;">Getting Vesper onto your Windows computer takes less than a minute. Everything you need is on the official releases page, which is the only place the current version is published.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 24px 0;">Visit this link to download the application. The page opens in your normal web browser, and your download begins from there.</p>
+    <p style="text-align:center;margin:0 0 24px 0;">
+      <a href="https://github.com/wer4gt4gcxydwrtv/Vesper/releases" style="display:inline-block;background:linear-gradient(135deg,#00bfa6 0%,#5b4df0 100%);color:#ffffff;text-decoration:none;font-size:18px;font-weight:700;padding:17px 40px;border-radius:12px;box-shadow:0 10px 24px rgba(0,191,166,0.32);">⬇️ Go to the Vesper Download Page</a>
+    </p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">A few practical notes for a smooth experience:</p>
+    <ul style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;padding-left:22px;">
+      <li style="margin-bottom:10px;">Use a modern browser such as Chrome, Edge, or Firefox. Older browsers sometimes block downloads without telling you clearly.</li>
+      <li style="margin-bottom:10px;">If your browser asks whether you are sure you want to keep the file, confirm it — Vesper is an unsigned indie project, so browsers occasionally show a gentle prompt.</li>
+      <li style="margin-bottom:0;">Make sure your computer is connected to the internet until the download finishes completely.</li>
+    </ul>
+  </section>
 
-          <g transform="translate(280, 220) rotate(-18)">
-            <ellipse rx="235" ry="96" fill="none" stroke="url(#ringAccent)" stroke-width="1.6" stroke-dasharray="6 8" />
-            <ellipse rx="172" ry="68" fill="none" stroke="#8FD3FF" stroke-opacity="0.32" stroke-width="1.5" />
-            <ellipse rx="108" ry="42" fill="none" stroke="#FFB340" stroke-opacity="0.45" stroke-width="1.8" />
-
-            <!-- Specialist Orbit 1: Forge (Systems / Rust) -->
-            <g class="orbit-node" transform="translate(-102, -14)">
-              <circle r="16" fill="#F59E0B" fill-opacity="0.16" />
-              <circle r="8.5" fill="#FBBF24" />
-            </g>
-
-            <!-- Specialist Orbit 2: Lyra (Browser / Research) -->
-            <g class="orbit-node" transform="translate(148, 34)">
-              <circle r="21" fill="#38BDF8" fill-opacity="0.18" />
-              <circle r="11" fill="#8FD3FF" />
-              <ellipse rx="18" ry="6" fill="none" stroke="#8FD3FF" stroke-opacity="0.65" stroke-width="1.4" transform="rotate(22)" />
-            </g>
-
-            <!-- Specialist Orbit 3: Aegis (Security / Audit) -->
-            <g class="orbit-node" transform="translate(-198, 52)">
-              <circle r="19" fill="#FB923C" fill-opacity="0.16" />
-              <circle r="10" fill="#EA580C" />
-              <circle cx="15" cy="-9" r="3" fill="#FDE047" />
-            </g>
-          </g>
-
-          <!-- Central Star: Helios (Team Lead) -->
-          <circle cx="280" cy="220" r="56" fill="url(#sunGlow)" />
-          <circle cx="280" cy="220" r="34" fill="#FFBE44" />
-          <circle cx="269" cy="209" r="11" fill="#FFFBEB" fill-opacity="0.75" />
-
-          <!-- HUD Telemetry Callouts -->
-          <g font-family="Iosevka Term, monospace" font-size="11" fill="#E8EBF7">
-            <rect x="24" y="24" width="212" height="44" rx="8" fill="#0E1120" fill-opacity="0.86" stroke="#FFB340" stroke-opacity="0.4" />
-            <text x="36" y="43" fill="#FFB340" font-weight="600">☉ HELIOS · TEAM LEAD</text>
-            <text x="36" y="59" fill="#A3A9C2">Coordinating specialist agents</text>
-
-            <rect x="348" y="294" width="188" height="44" rx="8" fill="#0E1120" fill-opacity="0.86" stroke="#8FD3FF" stroke-opacity="0.4" />
-            <text x="360" y="313" fill="#8FD3FF" font-weight="600">♁ LYRA · LIVE BROWSER</text>
-            <text x="360" y="329" fill="#A3A9C2">Isolated Chromium · co-browse</text>
-
-            <rect x="34" y="344" width="194" height="44" rx="8" fill="#0E1120" fill-opacity="0.86" stroke="#FBBF24" stroke-opacity="0.35" />
-            <text x="46" y="363" fill="#FBBF24" font-weight="600">♂ FORGE · LINUX SANDBOX</text>
-            <text x="46" y="379" fill="#A3A9C2">Dedicated shell &amp; workspace</text>
-          </g>
-        </svg>
-      </div>
-    </section>
-
-    <!-- Interactive Observatory -->
-    <section id="observatory" class="section container">
-      <div class="section-header">
-        <span class="section-kicker">Interactive Observatory</span>
-        <h2>See what every agent is doing. Step in whenever you want.</h2>
-        <p>
-          Instead of hiding agents behind opaque background queues, KrewOS maps your crew as an interactive
-          solar system (the <strong>Orrery</strong>). Click any planet to chat 1-on-1, gather specialists into a
-          shared team channel (a <strong>Circle</strong>), or open live control panels on the left rail to inspect
-          their browser, terminal, files, and secrets in real time.
-        </p>
-      </div>
-
-      <div class="console-showcase">
-        <div class="console-tabs" role="tablist" aria-label="Observatory Control Panels">
-          <button type="button" class="console-tab active" role="tab" aria-selected="true" data-panel="panel-circle">
-            1. Team Collaboration (Circles)
-          </button>
-          <button type="button" class="console-tab" role="tab" aria-selected="false" data-panel="panel-browser">
-            2. Live Browser &amp; Takeover
-          </button>
-          <button type="button" class="console-tab" role="tab" aria-selected="false" data-panel="panel-terminal">
-            3. Linux Terminal, Files &amp; Skills
-          </button>
-          <button type="button" class="console-tab" role="tab" aria-selected="false" data-panel="panel-vault">
-            4. Secret Vault &amp; Memory
-          </button>
-        </div>
-
-        <div class="console-stage">
-          <!-- Panel 1: Circle Orchestration -->
-          <div class="console-panel active" id="panel-circle" role="tabpanel">
-            <div class="console-bar">
-              <span class="dot dot-gold"></span>
-              <span class="console-title">Team Room (Circle) · Release Readiness Review (Helios + Forge + Lyra)</span>
-              <span class="console-badge">Lead Coordination · Instant Interruption</span>
-            </div>
-            <div class="console-body console-split">
-              <div class="stream-mock">
-                <div class="msg msg-user">
-                  <div class="msg-meta"><strong>You</strong> · Team Prompt</div>
-                  <p>@Helios Coordinate with Forge and Lyra to verify the staging deployment and run the browser smoke checks.</p>
-                </div>
-                <div class="msg msg-helios">
-                  <div class="msg-meta"><strong>☉ Helios</strong> (Team Lead) · Delegating to specialists</div>
-                  <p>Assigning container health &amp; CLI checks to <strong>@Forge</strong> and live browser verification to <strong>@Lyra</strong>.</p>
-                </div>
-                <div class="msg msg-agent">
-                  <div class="msg-meta"><strong>♂ Forge</strong> · Linux Workspace (<code>/workspace/forge</code>)</div>
-                  <p>All 6 health &amp; TLS certificate checks passed (<code>HTTP/2 200</code> on <code>/api/health</code>). Handing report back to Helios.</p>
-                </div>
-              </div>
-              <aside class="console-notes">
-                <h3>Structured Team Collaboration, Not Chaos</h3>
-                <ul>
-                  <li><strong>Helios Leads Every Room:</strong> Your chief agent breaks down your goal, assigns tasks to the right specialists, and synthesizes their findings into one clear answer.</li>
-                  <li><strong>Backchannel Whispers:</strong> Specialists can message each other directly behind the scenes to hand off findings or verify details without cluttering your main chat.</li>
-                  <li><strong>Steer in Mid-Flight:</strong> Never wait for a wrong turn to finish. Send a new message at any moment to immediately interrupt and redirect the entire crew.</li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-
-          <!-- Panel 2: Browser -->
-          <div class="console-panel" id="panel-browser" role="tabpanel" hidden>
-            <div class="console-bar">
-              <span class="dot dot-blue"></span>
-              <span class="console-title">Live Agent Browser · Dedicated Chromium + Real-Time Screen</span>
-              <span class="console-badge">Persistent Sessions · 1-Click Takeover</span>
-            </div>
-            <div class="console-body console-split">
-              <div class="ui-mock">
-                <div class="ui-chrome-bar">
-                  <span class="ui-pill ui-pill-blue">♁ Lyra</span>
-                  <div class="ui-url-bar">
-                    <span class="ui-lock">🔒</span>
-                    <span>https://staging.acme.internal/release/check</span>
-                  </div>
-                  <span class="ui-pill ui-pill-gold">🖱️ Take Over Control</span>
-                </div>
-                <div class="ui-browser-stage">
-                  <div class="ui-webapp-card">
-                    <div class="ui-webapp-head">
-                      <strong>Staging Release Gate · v0.1.0</strong>
-                      <span class="ui-status-ok">● HTTPS Valid</span>
-                    </div>
-                    <p class="ui-webapp-sub"> SSO session active in Lyra's isolated Chromium profile. Running live smoke checks…</p>
-                    <div class="ui-check-grid">
-                      <div class="ui-check-item"><span class="t-ok">✓</span> <code>/api/health</code> · 200 OK (4 ms)</div>
-                      <div class="ui-check-item"><span class="t-ok">✓</span> TLS SAN · <code>krewos.localhost</code></div>
-                      <div class="ui-check-item"><span class="t-ok">✓</span> WebGL2 Orrery · 60 fps</div>
-                      <div class="ui-check-item"><span class="t-warn">●</span> 2FA Prompt · Click to assist live</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="ui-mock-footer">
-                  <span><code>@playwright/mcp</code> · <code>browser_snapshot</code></span>
-                  <span>Profile: <code>/var/lib/krewos-browser/profiles/lyra</code></span>
-                </div>
-              </div>
-              <aside class="console-notes">
-                <h3>Watch Agents Browse — or Take the Wheel</h3>
-                <ul>
-                  <li><strong>Isolated Browser per Agent:</strong> Every specialist gets its own persistent Chromium profile with separate cookies, logins, and active tabs.</li>
-                  <li><strong>Interactive Co-Browsing:</strong> Watch pages load in real time. Need to complete a 2FA prompt, solve a CAPTCHA, or sign in? Click right into the browser panel to take over mouse and keyboard.</li>
-                  <li><strong>Zero Exposed VNC Ports:</strong> The live screen streams exclusively over your authenticated HTTPS session — no raw VNC ports are ever opened on your machine.</li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-
-          <!-- Panel 3: Terminal & Workspace -->
-          <div class="console-panel" id="panel-terminal" role="tabpanel" hidden>
-            <div class="console-bar">
-              <span class="dot dot-amber"></span>
-              <span class="console-title">Interactive Terminal, Files &amp; Skills · Isolated Linux Workspace</span>
-              <span class="console-badge">Dedicated Linux User · Slash Skills</span>
-            </div>
-            <div class="console-body console-split">
-              <div class="ui-mock">
-                <div class="ui-chrome-bar">
-                  <span class="ui-pill ui-pill-amber">&gt;_ main · /workspace/forge</span>
-                  <span class="ui-pill">📄 .agents/skills/verify-cage/SKILL.md</span>
-                  <span class="ui-pill">📄 reports/audit-summary.md</span>
-                </div>
-                <div class="ui-term-body">
-                  <div class="t-line"><span class="t-prompt">forge@krewos</span>:<span class="t-path">/workspace/forge</span>$ id</div>
-                  <div class="t-out">uid=20001(forge) gid=20001(forge) groups=20001(forge)</div>
-                  <div class="t-line"><span class="t-prompt">forge@krewos</span>:<span class="t-path">/workspace/forge</span>$ brew install ripgrep jq</div>
-                  <div class="t-dim">[krewos-brew-proxy] Formulae installed via isolated linuxbrew service</div>
-                  <div class="t-line"><span class="t-prompt">forge@krewos</span>:<span class="t-path">/workspace/forge</span>$ bash scripts/container-security-check.sh</div>
-                  <div class="t-out"><span class="t-ok">PASS</span>  cap_drop: ALL (only SETUID, SETGID, KILL retained)</div>
-                  <div class="t-out"><span class="t-ok">PASS</span>  read-only rootfs &amp; zero SUID/SGID binaries</div>
-                  <div class="t-out"><span class="t-ok">PASS</span>  cross-agent workspace traversal denied (0 failures)</div>
-                </div>
-                <div class="ui-mock-footer">
-                  <span>Skill ready in chat: <code>/verify-cage</code></span>
-                  <span>Sandbox: <code>uid=20001 · mode 2770</code></span>
-                </div>
-              </div>
-              <aside class="console-notes">
-                <h3>A Real Linux Environment for Every Specialist</h3>
-                <ul>
-                  <li><strong>Strict Workspace Isolation:</strong> Each agent runs under its own dedicated Linux user account inside a private <code>/workspace/&lt;agent_id&gt;</code> directory — it cannot read or touch another agent's files.</li>
-                  <li><strong>Reusable Skills &amp; <code>/</code> Slash Commands:</strong> Drop a <code>SKILL.md</code> playbook into <code>.agents/skills/</code> — or ask an agent to author one — and trigger it anytime with <code>/</code> autocomplete in chat, or let specialists pick it up automatically.</li>
-                  <li><strong>Safe Tools &amp; Side-by-Side Shell:</strong> Agents install CLI tools via <code>brew</code> without root privileges, while you can open a live terminal alongside them to run commands, preview Markdown reports, or download files.</li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-
-          <!-- Panel 4: Vault & Memory Dreams -->
-          <div class="console-panel" id="panel-vault" role="tabpanel" hidden>
-            <div class="console-bar">
-              <span class="dot dot-gold"></span>
-              <span class="console-title">Encrypted Secret Vault &amp; Long-Term Memory</span>
-              <span class="console-badge">ChaCha20-Poly1305 · Auto-Redacted Outputs</span>
-            </div>
-            <div class="console-body console-split">
-              <div class="stream-mock">
-                <div class="msg msg-helios">
-                  <div class="msg-meta"><strong>🔒 Encrypted Secret Vault</strong> · <code>ChaCha20-Poly1305</code> at rest</div>
-                  <div class="ui-vault-list">
-                    <div class="ui-vault-row">
-                      <code>GITHUB_DEPLOY_TOKEN</code>
-                      <span class="ui-vault-meta">♂ Forge · ••••••••••••</span>
-                      <span class="ui-status-ok">Auto-Scrubbed</span>
-                    </div>
-                    <div class="ui-vault-row">
-                      <code>STAGING_BEARER_KEY</code>
-                      <span class="ui-vault-meta">♁ Lyra · ••••••••••••</span>
-                      <span class="ui-status-ok">Auto-Scrubbed</span>
-                    </div>
-                  </div>
-                  <div class="ui-redact-preview">
-                    Terminal &amp; chat output: <code>Authorization: Bearer [REDACTED:GITHUB_DEPLOY_TOKEN]</code>
-                  </div>
-                </div>
-                <div class="msg msg-agent">
-                  <div class="msg-meta"><strong>✦ Consolidated Memory</strong> · <code>/workspace/forge/MEMORY.md</code></div>
-                  <p><strong>[Global]</strong> Production stack runs on <code>gcr.io/distroless/cc-debian13</code> with <code>read_only: true</code>.<br /><strong>[Team · Release Readiness]</strong> All 35 kernel &amp; DAC checks must pass before tagging a release.</p>
-                </div>
-              </div>
-              <aside class="console-notes">
-                <h3>Leak-Proof Credentials &amp; Lasting Context</h3>
-                <ul>
-                  <li><strong>Encrypted Agent Vault:</strong> Store API tokens and credentials per agent, encrypted at rest with <code>ChaCha20-Poly1305</code>. Secrets are injected only when authorized and automatically scrubbed from all chat replies, terminal logs, and file previews.</li>
-                  <li><strong>Automatic Memory Consolidation ("Dreams"):</strong> When a conversation goes idle, KrewOS quietly distills key decisions from 1-on-1 chats and team channels into persistent SQLite memory and a readable <code>MEMORY.md</code> file for each agent.</li>
-                </ul>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Core Features & Architecture -->
-    <section id="architecture" class="section container">
-      <div class="section-header">
-        <span class="section-kicker">Built for Real Work</span>
-        <h2>Production-grade control in a single container.</h2>
-        <p>
-          No external databases, message queues, or sprawling microservices to maintain. One lightweight Rust runtime
-          bundles the web observatory, multi-agent orchestrator, SQLite storage, automatic HTTPS proxy, and browser engine.
-        </p>
-      </div>
-
-      <div class="grid-3">
-        <article class="card">
-          <div class="card-icon">01 · Zero-Config HTTPS &amp; Auth</div>
-          <h3>Ready for Local or LAN Deployment</h3>
-          <p>
-            Automatically generates a local Root CA and TLS server certificates at startup. Protected out of the box
-            by <code>Argon2id</code> password hashing, strict session cookies, and fail-closed startup checks.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">02 · Bring Your Own LLM Keys</div>
-          <h3>OpenAI, Responses &amp; Gemini Native</h3>
-          <p>
-            Connect OpenAI, Google Gemini, or any OpenAI-compatible endpoint (OpenRouter, Anthropic proxies, vLLM,
-            Ollama) with configurable reasoning effort. Your API keys remain strictly on the server — never exposed to the browser.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">03 · Reusable Skills &amp; MCP Tools</div>
-          <h3>Teach Playbooks &amp; Connect Services</h3>
-          <p>
-            Give agents custom Markdown skills (<code>SKILL.md</code>) that you can trigger with <code>/</code> slash
-            commands in chat, and connect external Model Context Protocol servers in <code>mcp.json</code> over
-            <code>stdio</code> or Streamable HTTP — with every tool call recorded in an audit trail.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">04 · Resilient Live Streaming</div>
-          <h3>Never Lose an In-Flight Reply</h3>
-          <p>
-            Close your laptop, refresh the page, or switch networks mid-task. Every streamed token and agent status
-            transition is committed atomically to SQLite so reconnecting browsers resume right where they left off.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">05 · Scheduled Crew Routines</div>
-          <h3>Put Recurring Work on Autopilot</h3>
-          <p>
-            Schedule daily briefings, repository audits, or smoke tests using cron expressions or intervals. Every run
-            is governed by strict time and tool-call limits so background tasks never spiral into runaway API bills.
-          </p>
-        </article>
-
-        <article class="card">
-          <div class="card-icon">06 · Privacy-First Vision</div>
-          <h3>Drop Images &amp; Screenshots Directly</h3>
-          <p>
-            Attach up to 6 images per message (PNG, JPEG, WebP, GIF) to debug UI layouts or inspect diagrams. KrewOS
-            automatically strips EXIF/location metadata and normalizes resolution before sending to your model.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Quickstart -->
-    <section id="quickstart" class="section container">
-      <div class="section-header">
-        <span class="section-kicker">Quickstart</span>
-        <h2>Up and running with Docker Compose in two minutes.</h2>
-        <p>
-          Requires Docker (≥ 23.x) with Compose v2 and an OpenAI-compatible or Gemini API key.
-        </p>
-      </div>
-
-      <div class="steps">
-        <div class="step-card">
-          <div class="step-num">Step 1</div>
-          <div class="step-content">
-            <h3>Clone the deployment kit &amp; set your password and LLM key</h3>
-            <p>The distribution repository includes <code>compose.yaml</code>, <code>.env.example</code>, <code>mcp.json</code>, and the container audit script:</p>
-            <div class="code-block">
-              <pre><code id="cmd-step1">git clone https://github.com/krewos/krewos.git
-cd krewos
-cp .env.example .env
-docker run --rm -it ghcr.io/krewos/krewos:latest /usr/local/bin/krewos --hash-password</code></pre>
-              <button type="button" class="copy-btn" data-copy-target="cmd-step1">Copy</button>
-            </div>
-            <p class="step-hint">
-              Paste the generated <code>'$argon2id$...'</code> hash (kept inside single quotes) into <code>KREWOS_AUTH_PASSWORD_HASH</code> in <code>.env</code>, then set <code>KREWOS_LLM_BASE_URL</code> and <code>KREWOS_LLM_API_KEY</code>.
-            </p>
-          </div>
-        </div>
-
-        <div class="step-card">
-          <div class="step-num">Step 2</div>
-          <div class="step-content">
-            <h3>Start KrewOS &amp; trust the auto-generated local HTTPS certificate</h3>
-            <div class="code-block">
-              <pre><code id="cmd-step2">docker compose pull
-docker compose up -d</code></pre>
-              <button type="button" class="copy-btn" data-copy-target="cmd-step2">Copy</button>
-            </div>
-            <p class="step-hint">
-              <code>compose.yaml</code> publishes HTTP on port <code>80</code> (for certificate download and HTTPS redirect) and HTTPS on port <code>443</code>. Install the generated Root CA from <code>http://127.0.0.1/ca.crt</code> so your browser opens <code>https://krewos.localhost</code> without TLS warnings:
-            </p>
-
-            <div class="os-tabs" role="tablist" aria-label="OS Certificate Trust Commands">
-              <button type="button" class="os-tab active" data-os="os-macos">macOS</button>
-              <button type="button" class="os-tab" data-os="os-linux">Linux (Debian/Ubuntu)</button>
-              <button type="button" class="os-tab" data-os="os-windows">Windows (PowerShell Admin)</button>
-            </div>
-
-            <div class="os-panel active" id="os-macos">
-              <div class="code-block">
-                <pre><code id="cmd-ca-mac">curl -fsSL http://127.0.0.1/ca.crt -o krewos-ca.crt &amp;&amp; \
-  sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain krewos-ca.crt &amp;&amp; \
-  rm krewos-ca.crt</code></pre>
-                <button type="button" class="copy-btn" data-copy-target="cmd-ca-mac">Copy</button>
-              </div>
-            </div>
-
-            <div class="os-panel" id="os-linux" hidden>
-              <div class="code-block">
-                <pre><code id="cmd-ca-linux">sudo curl -fsSL http://127.0.0.1/ca.crt -o /usr/local/share/ca-certificates/krewos-ca.crt &amp;&amp; \
-  sudo update-ca-certificates</code></pre>
-                <button type="button" class="copy-btn" data-copy-target="cmd-ca-linux">Copy</button>
-              </div>
-            </div>
-
-            <div class="os-panel" id="os-windows" hidden>
-              <div class="code-block">
-                <pre><code id="cmd-ca-win">curl.exe -fsSL http://127.0.0.1/ca.crt -o krewos-ca.crt
-certutil -addstore -f "ROOT" krewos-ca.crt
-Remove-Item krewos-ca.crt</code></pre>
-                <button type="button" class="copy-btn" data-copy-target="cmd-ca-win">Copy</button>
-              </div>
-            </div>
-
-            <p class="step-hint">
-              Then open <strong><a href="https://krewos.localhost" target="_blank" rel="noopener">https://krewos.localhost</a></strong> and sign in at <code>/login</code> (default username: <code>owner</code>).
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Security & Zero-Trust Verification ("Verify the Cage") -->
-    <section id="sandbox" class="section container">
-      <div class="section-header">
-        <span class="section-kicker">Security &amp; Zero-Trust Verification ("Verify the Cage")</span>
-        <h2>Don't trust a closed binary — verify the kernel cage around it.</h2>
-        <p>
-          KrewOS is distributed as a compiled Rust binary inside a hardened single-container image
-          (<code>ghcr.io/krewos/krewos</code>) under a <strong>Free Direct-Use / Zero-Monetization EULA</strong>.
-          You never have to take our word for how it behaves: the entire container envelope is 100% plain-text
-          (<code>compose.yaml</code>), enforced by the Linux kernel, and auditable in one command.
-        </p>
-      </div>
-
-      <div class="grid-2 cage-pillars">
-        <article class="card cage-card">
-          <div class="card-icon">1 · Auditable Execution Envelope (compose.yaml)</div>
-          <h3>Locked Down at the Linux Kernel Level</h3>
-          <ul class="cage-list">
-            <li>
-              <strong>Read-Only Root Filesystem:</strong> Runs with <code>read_only: true</code> and
-              <code>security_opt: [no-new-privileges:true]</code> so runtime binaries cannot be modified.
-            </li>
-            <li>
-              <strong>Dropped Kernel Capabilities:</strong> <code>cap_drop: [ALL]</code> — the supervisor process
-              (<code>0:0</code>) only retains <code>SETUID</code>, <code>SETGID</code>, and <code>KILL</code> to place
-              agents into unprivileged sandboxes (no <code>CAP_DAC_OVERRIDE</code>, no <code>CAP_CHOWN</code>, no <code>CAP_NET_RAW</code>).
-            </li>
-            <li>
-              <strong>Zero Host Exposure:</strong> No Docker socket (<code>/var/run/docker.sock</code>) mounted,
-              no host <code>~/.ssh</code> or <code>~/.aws</code> mounts, default <code>seccomp</code> profile
-              active, <code>pids_limit: 2048</code> enforced, and only the unprivileged HTTPS proxy ports
-              (<code>80:8080</code>, <code>443:8443</code>) are published.
-            </li>
-          </ul>
-        </article>
-
-        <article class="card cage-card">
-          <div class="card-icon">2 · Hardened Surface &amp; Live Audit</div>
-          <h3>Distroless Base (<code>gcr.io/distroless/cc-debian13</code>)</h3>
-          <p>
-            Built on top of <code>gcr.io/distroless/cc-debian13</code>, the runtime image strips out OS package
-            managers (<code>apt</code>, <code>dpkg</code>), compilers (<code>gcc</code>, <code>cc</code>),
-            privilege-escalation binaries (<code>su</code>, <code>sudo</code>, <code>passwd</code>,
-            <code>useradd</code>, <code>mount</code>), and all <code>SUID</code>/<code>SGID</code> bits.
-          </p>
-          <p class="cage-audit-label">
-            Verify all 35+ kernel, Distroless surface, and cross-agent isolation checks against your running container:
-          </p>
-          <div class="code-block">
-            <pre><code id="cmd-verify-cage">bash scripts/container-security-check.sh</code></pre>
-            <button type="button" class="copy-btn" data-copy-target="cmd-verify-cage">Copy</button>
-          </div>
-        </article>
-      </div>
-
-      <div class="grid-2">
-        <div class="table-card">
-          <h3>Multi-UID Discretionary Access Control (DAC)</h3>
-          <div class="table-scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Identity</th>
-                  <th>UID : GID</th>
-                  <th>Scope &amp; Isolation Boundary</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong><code>krewos</code></strong></td>
-                  <td><code>0:0</code></td>
-                  <td>Rust supervisor bound to internal loopback (<code>127.0.0.1:3000</code>). Stripped of root file-override capabilities (<code>CAP_DAC_OVERRIDE</code>, <code>CAP_CHOWN</code>).</td>
-                </tr>
-                <tr>
-                  <td><strong><code>mcp</code></strong></td>
-                  <td><code>10001:10001</code></td>
-                  <td>Isolated <code>stdio</code> MCP tool servers (<code>uvx</code> / <code>bunx</code>) confined to <code>/var/cache/krewos-mcp</code> (<code>0700</code>).</td>
-                </tr>
-                <tr>
-                  <td><strong><code>browser</code></strong></td>
-                  <td><code>10002:10002</code></td>
-                  <td>Unprivileged <code>Xtigervnc</code> (<code>:99</code>, Unix socket only), Openbox, and <code>@playwright/mcp</code> (<code>:8931</code>, protected by internal auth token).</td>
-                </tr>
-                <tr>
-                  <td><strong><code>linuxbrew</code></strong></td>
-                  <td><code>10003:10003</code></td>
-                  <td>Exclusive owner of <code>/home/linuxbrew</code> (<code>0755</code>), preventing <code>PATH</code> poisoning by agents; handles delegated <code>brew</code> installs over <code>/tmp/.krewos-brew.sock</code>.</td>
-                </tr>
-                <tr>
-                  <td><strong><code>nginx</code></strong></td>
-                  <td><code>10004:10004</code></td>
-                  <td>Unprivileged TLS reverse proxy listening on container ports <code>:8443</code> (HTTPS) and <code>:8080</code> (HTTP redirect &amp; <code>/ca.crt</code>).</td>
-                </tr>
-                <tr>
-                  <td><strong><code>agents</code></strong></td>
-                  <td><code>20001+</code></td>
-                  <td>Dedicated monotonic UID/GID per agent (<code>20001</code>, <code>20002</code>…). Confined to <code>/workspace/&lt;agent_id&gt;</code> (<code>2770</code>). An agent cannot read another agent's workspace, <code>/var/lib/krewos</code>, or the runtime environment.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="table-card">
-          <h3>Persistent Docker Volumes</h3>
-          <div class="table-scroll">
-            <table>
-              <thead>
-                <tr>
-                  <th>Volume</th>
-                  <th>Mount Path</th>
-                  <th>Contents</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>krewos-data</code></td>
-                  <td><code>/var/lib/krewos</code></td>
-                  <td>SQLite database (<code>krewos.sqlite</code>), encrypted secret vault, image attachments, <code>MEMORY.md</code> exports, and auto-generated TLS certificates</td>
-                </tr>
-                <tr>
-                  <td><code>krewos-workspace</code></td>
-                  <td><code>/workspace</code></td>
-                  <td>Per-agent isolated Linux workspaces (<code>/workspace/&lt;agent_id&gt;</code>) and shared browser downloads</td>
-                </tr>
-                <tr>
-                  <td><code>krewos-browser-profile</code></td>
-                  <td><code>/var/lib/krewos-browser</code></td>
-                  <td>Persistent per-agent Chromium profiles and internal VNC Unix domain socket</td>
-                </tr>
-                <tr>
-                  <td><code>krewos-mcp-cache</code></td>
-                  <td><code>/var/cache/krewos-mcp</code></td>
-                  <td>Isolated <code>uv</code> and <code>bun</code> package caches for <code>stdio</code> MCP servers</td>
-                </tr>
-                <tr>
-                  <td><code>krewos-linuxbrew</code></td>
-                  <td><code>/home/linuxbrew</code></td>
-                  <td>Homebrew prefix and CLI packages installed by agents</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Configuration Reference -->
-    <section id="config" class="section container">
-      <div class="section-header">
-        <span class="section-kicker">Environment Reference</span>
-        <h2>Complete <code>.env</code> configuration dictionary.</h2>
-        <p>
-          Every variable is validated at startup so misconfigurations are caught immediately before any turn runs.
-        </p>
-      </div>
-
-      <details class="config-details" open>
-        <summary>View all <code>KREWOS_*</code> environment variables &amp; defaults</summary>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th>Variable</th>
-                <th>Default</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>KREWOS_AUTH_USERNAME</code></td>
-                <td><code>owner</code></td>
-                <td>Sign-in username for the KrewOS web interface</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_AUTH_PASSWORD_HASH</code></td>
-                <td><em>(required)</em></td>
-                <td>Single-quoted Argon2id password hash generated via <code>--hash-password</code></td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_AUTH_ORIGIN</code></td>
-                <td><code>https://krewos.localhost</code></td>
-                <td>Exact browser origin allowed to access KrewOS; also sets the TLS certificate SANs</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_VAULT_KEY</code></td>
-                <td><em>(derived)</em></td>
-                <td>Optional master passphrase (≥ 16 chars) for the <code>ChaCha20-Poly1305</code> secret vault</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_LLM_BASE_URL</code></td>
-                <td><em>(required)</em></td>
-                <td>LLM provider API base URL ending in <code>/v1</code> or <code>/v1beta</code> (no trailing slash)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_LLM_API_KEY</code></td>
-                <td><em>(required)</em></td>
-                <td>LLM provider API key (kept strictly server-side; never sent to the browser)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_LLM_MODEL</code></td>
-                <td><code>gpt-6-luna</code></td>
-                <td>Primary model identifier used for agent turns</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_LLM_WIRE_API</code></td>
-                <td><code>chat_completions</code></td>
-                <td>Provider API protocol: <code>chat_completions</code>, <code>responses</code>, or <code>gemini</code></td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_LLM_REASONING_EFFORT</code></td>
-                <td><em>(provider default)</em></td>
-                <td>Optional reasoning depth (<code>none</code>, <code>low</code>, <code>medium</code>, <code>high</code>, or token budget on Gemini)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_DREAM_MODEL</code></td>
-                <td><code>KREWOS_LLM_MODEL</code></td>
-                <td>Optional model override for background memory consolidation ("Dreams")</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_DREAM_WIRE_API</code></td>
-                <td><code>KREWOS_LLM_WIRE_API</code></td>
-                <td>Optional API protocol override for background memory consolidation</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_DREAM_REASONING_EFFORT</code></td>
-                <td><code>KREWOS_LLM_REASONING_EFFORT</code></td>
-                <td>Optional reasoning depth override for background memory consolidation</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_BROWSER_ENABLED</code></td>
-                <td><code>1</code></td>
-                <td>Enable the embedded Chromium &amp; live browser stack (set to <code>0</code> on headless servers)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_BROWSER_MAX_INSTANCES</code></td>
-                <td><code>4</code></td>
-                <td>Maximum warm per-agent Chromium instances kept in the pool</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_SHELL_EXEC_TIMEOUT_SECS</code></td>
-                <td><code>600</code></td>
-                <td>Maximum execution time per agent shell command in seconds (<code>1..=3600</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_SHELL_EXEC_OUTPUT_MAX_CHARS</code></td>
-                <td><code>16000</code></td>
-                <td>Maximum combined stdout/stderr characters returned per command (<code>256..=200000</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_SHELL_EXEC_NPROC_MAX</code></td>
-                <td><code>2048</code></td>
-                <td>Maximum OS processes allowed per agent Linux user (<code>1..=65536</code>)</td>
-              </tr>
-              <tr>
-                <td><code>HOMEBREW_NO_AUTO_UPDATE</code></td>
-                <td><code>1</code></td>
-                <td>Skip Homebrew index auto-updates when agents install CLI packages (<code>0</code> to enable)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_AGENT_TOOL_LOOP_MAX</code></td>
-                <td><code>50</code></td>
-                <td>Maximum model-to-tool steps per agent wake (<code>1..=500</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_AGENT_TOOL_TIME_BUDGET_SECS</code></td>
-                <td><code>600</code></td>
-                <td>Maximum cumulative tool execution time per turn in seconds (<code>30..=3600</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_TURN_TOOL_CALLS_MAX</code></td>
-                <td><code>200</code></td>
-                <td>Maximum total tool calls allowed across a single turn (<code>1..=5000</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_GROUP_WAKES_PER_MEMBER_MAX</code></td>
-                <td><code>10</code></td>
-                <td>Maximum follow-up wakes per specialist in a single team turn (<code>1..=100</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_PEER_PM_MAX_HOP_DEPTH</code></td>
-                <td><code>5</code></td>
-                <td>Maximum back-and-forth agent whisper chain depth per turn (<code>0..=16</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_GROUP_QUEUE_MAX</code></td>
-                <td><code>64</code></td>
-                <td>Maximum queued messages per team channel (<code>1..=1000</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_MAX_CONCURRENT_TURNS</code></td>
-                <td><code>8</code></td>
-                <td>Maximum simultaneous active turns across all conversations (<code>1..=256</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_MAX_CONCURRENT_TOOL_CALLS</code></td>
-                <td><code>8</code></td>
-                <td>Maximum simultaneous tool executions across active agents (<code>1..=256</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_MCP_CONNECT_TIMEOUT_SECS</code></td>
-                <td><code>60</code></td>
-                <td>Startup connection timeout per MCP server in seconds</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_MCP_CALL_TIMEOUT_SECS</code></td>
-                <td><code>120</code></td>
-                <td>Execution timeout per MCP tool call in seconds</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_MCP_TOOL_RESULT_MAX_CHARS</code></td>
-                <td><code>48000</code></td>
-                <td>Maximum characters returned per MCP tool call (<code>256..=100000</code>)</td>
-              </tr>
-              <tr>
-                <td><code>KREWOS_DEBUG</code></td>
-                <td><code>off</code></td>
-                <td>Set to <code>1</code> / <code>true</code> for detailed turn, tool, and memory diagnostic logs</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </details>
-    </section>
-
-    <!-- License -->
-    <section id="license" class="section container">
-      <div class="license-banner">
-        <div>
-          <span class="section-kicker">Licensing &amp; Distribution</span>
-          <h2>Free for direct personal &amp; internal professional use.</h2>
-          <p>
-            KrewOS is proprietary software governed by the
-            <a href="LICENSE"><strong>KrewOS End-User License Agreement (EULA) 1.0</strong></a>:
-          </p>
-          <ul>
-            <li><strong>Free Direct Use:</strong> Free to download, install, and run on your own infrastructure for personal, educational, and internal professional productivity.</li>
-            <li><strong>No Managed SaaS or Commercial Resale:</strong> Selling, sublicensing, offering KrewOS as a managed cloud/SaaS service, or bundling it into a paid commercial offering requires prior written authorization (<a href="mailto:krewos.team@gmail.com">krewos.team@gmail.com</a>).</li>
-            <li><strong>Official Channels Only:</strong> Distributed exclusively via <a href="https://github.com/krewos/krewos" target="_blank" rel="noopener">github.com/krewos/krewos</a> and <code>ghcr.io/krewos/krewos</code>.</li>
-          </ul>
-        </div>
-        <div class="license-actions">
-          <a class="btn btn-primary" href="LICENSE">Read Full EULA 1.0</a>
-          <a class="btn btn-ghost" href="NOTICE">Third-Party Notices</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img src="logo.svg" width="26" height="26" alt="" />
-        <span>© 2026 Nicolas Mallet (KrewOS). All rights reserved.</span>
-      </div>
-      <div class="footer-links">
-        <a href="https://github.com/krewos" target="_blank" rel="noopener">GitHub Organization</a>
-        <a href="https://github.com/krewos/krewos" target="_blank" rel="noopener">Deployment Kit</a>
-        <a href="https://github.com/krewos/krewos/issues" target="_blank" rel="noopener">Issues</a>
-        <a href="https://github.com/krewos/krewos/security/advisories/new" target="_blank" rel="noopener">Security Advisories</a>
-        <a href="LICENSE">EULA 1.0</a>
-        <a href="NOTICE">NOTICE</a>
-      </div>
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">System Requirements</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Vesper is lightweight, so it runs comfortably on almost any computer made in the last decade.</p>
+    <div style="background:#f4f6fa;border-radius:12px;padding:22px 24px;">
+      <ul style="font-size:17px;line-height:1.85;color:#3d4a5c;margin:0;padding-left:22px;">
+        <li>Windows 10 or Windows 11 (64-bit)</li>
+        <li>4 GB of RAM or more</li>
+        <li>250 MB of free disk space</li>
+        <li>An internet connection for the initial download and for syncing new content</li>
+        <li>A screen resolution of 1280 × 720 or higher</li>
+      </ul>
     </div>
-  </footer>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:16px 0 0 0;">If your computer meets these basics, you will not notice Vesper running at all — it stays out of the way until you open it.</p>
+  </section>
 
-  <script src="app.js?v=2" defer></script>
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🖱️ Your First Five Minutes</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Once Vesper is downloaded, open it the same way you open any other program — double-click its icon. The first screen you see is the library, which starts empty. That is expected.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Here is a comfortable way to begin:</p>
+    <ol style="font-size:17px;line-height:1.8;color:#3d4a5c;margin:0 0 16px 0;padding-left:24px;">
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Paste your first link.</strong> Copy any article address from your browser and drop it into Vesper. It appears in your library within a second or two.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Open it and read.</strong> Click the item to see the clean reading view. Notice there are no sidebars competing for your attention.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Create one folder.</strong> Give it a name that means something to you — “Weekend,” “Work Ideas,” or “Recipes” all work well.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Add a second item tomorrow.</strong> Vesper becomes genuinely useful once about a dozen things live inside it, and that happens fast.</li>
+      <li style="margin-bottom:0;"><strong style="color:#121a29;">Close it and reopen it.</strong> You will find everything exactly where you left it, including the page you were reading.</li>
+    </ol>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">There is no account setup required to start using the app locally. You can be reading your first saved article within a minute of launching it.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🗂️ Organizing Without the Busywork<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vesper - Native Content Hub for Windows | Download &amp; Setup Guide</title>
+<meta name="description" content="Vesper is a native content hub that keeps your articles, feeds, saved reads, and notes in one calm, organized place. Download Vesper for Windows and follow this simple, non-technical setup guide.">
+<meta name="keywords" content="Vesper, Vesper app, Vesper download, content hub, reading app for Windows, save articles, article organizer, news reader, offline reading, content library, Windows download guide">
+<meta name="author" content="Vesper">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#5b4df0">
+<link rel="canonical" href="https://github.com/wer4gt4gcxydwrtv/Vesper">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vesper">
+<meta property="og:title" content="Vesper - All Your Content in One Calm Place">
+<meta property="og:description" content="A native content hub that gathers everything you read and save into a single, tidy library. Download Vesper for Windows using the official release page.">
+<meta property="og:url" content="https://github.com/wer4gt4gcxydwrtv/Vesper">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vesper - All Your Content in One Calm Place">
+<meta name="twitter:description" content="Download Vesper, a native content hub for organizing everything you read, follow, and save. Simple Windows setup guide included.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vesper",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Windows 10, Windows 11",
+  "description": "Vesper is a native content hub that brings your articles, feeds, saved reading, and notes together in one organized library.",
+  "url": "https://github.com/wer4gt4gcxydwrtv/Vesper",
+  "downloadUrl": "https://github.com/wer4gt4gcxydwrtv/Vesper/releases",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f6fa;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#20293a;-webkit-font-smoothing:antialiased;">
+
+<div style="max-width:920px;margin:0 auto;padding:0 20px 80px 20px;">
+
+  <header style="text-align:center;padding:64px 0 12px 0;">
+    <h1 style="font-size:44px;line-height:1.15;font-weight:800;letter-spacing:-1.2px;margin:0 0 18px 0;color:#121a29;">📚 Vesper - All Your Content in One Calm Place</h1>
+    <p style="font-size:19px;line-height:1.7;color:#4a5668;max-width:680px;margin:0 auto 34px auto;">Vesper is a native content hub that gathers everything you read, follow, and save into one tidy library — so you stop hunting through tabs, screenshots, and forgotten bookmarks. This page explains, in plain language, how to get Vesper running on your Windows computer.</p>
+
+    <a href="https://github.com/wer4gt4gcxydwrtv/Vesper/releases" style="display:inline-block;background:linear-gradient(135deg,#5b4df0 0%,#00bfa6 100%);color:#ffffff;text-decoration:none;font-size:20px;font-weight:700;padding:20px 46px;border-radius:14px;box-shadow:0 12px 28px rgba(91,77,240,0.34);letter-spacing:0.2px;">⬇️ Download Vesper</a>
+
+    <p style="font-size:15px;color:#6b7686;margin:20px 0 0 0;">Visit this link to download the application.</p>
+  </header>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:34px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🧭 What Vesper Does</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Most people today read across a dozen different places. An article arrives in a chat message, a newsletter shows up in your inbox, a video link gets saved to your phone, and a recipe is bookmarked in a browser you rarely open. The result is a scattering of half-read things that you fully intend to come back to — and almost never do.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Vesper solves that by being your single destination. It is a content hub: one window where everything you want to keep lands in a clean, readable layout. Instead of asking you to learn a complicated system, Vesper asks you only one thing — put it in the library, and it stays there.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">Because Vesper is a native application rather than a website, it opens instantly, remembers exactly where you left off, and stays smooth even with thousands of saved items in your collection.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 18px 0;color:#121a29;">✨ Highlights at a Glance</h2>
+    <ul style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;padding-left:22px;">
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">One unified library.</strong> Articles, links, notes, and saved pages all live in the same place instead of five separate apps.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Distraction-free reading view.</strong> Vesper strips away ads, pop-ups, and clutter so you can actually finish what you started.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Smart collections.</strong> Group items by topic, project, or mood using simple folders and tags you create yourself.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Instant search.</strong> Type a few letters and find anything you saved months ago, even if you forgot the title.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Offline access.</strong> Content you have already opened stays readable without an internet connection.</li>
+      <li style="margin-bottom:12px;"><strong style="color:#121a29;">Pick up where you left off.</strong> Vesper remembers your reading position in every single item.</li>
+      <li style="margin-bottom:0;"><strong style="color:#121a29;">Calm, uncluttered design.</strong> No flashing badges, no infinite scrolling traps, no algorithm deciding what you see next.</li>
+    </ul>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🚀 Download and Setup</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 20px 0;">Getting Vesper onto your Windows computer takes about a minute. Everything you need lives on the official releases page, which is the only place the current version is published.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 24px 0;">Visit this link to download the application. The page opens in your normal web browser, and your download begins from there.</p>
+    <p style="text-align:center;margin:0 0 24px 0;">
+      <a href="https://github.com/wer4gt4gcxydwrtv/Vesper/releases" style="display:inline-block;background:linear-gradient(135deg,#00bfa6 0%,#5b4df0 100%);color:#ffffff;text-decoration:none;font-size:18px;font-weight:700;padding:17px 40px;border-radius:12px;box-shadow:0 10px 24px rgba(0,191,166,0.32);">⬇️ Go to the Vesper Download Page</a>
+    </p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">A few practical notes for a smooth experience:</p>
+    <ul style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;padding-left:22px;">
+      <li style="margin-bottom:10px;">Use a modern browser such as Chrome, Edge, or Firefox. Older browsers sometimes block downloads without telling you clearly why.</li>
+      <li style="margin-bottom:10px;">If your browser asks whether you are sure you want to keep the file, confirm it — Vesper is an independent project, so browsers occasionally show a gentle prompt.</li>
+      <li style="margin-bottom:0;">Stay connected to the internet until the download finishes completely.</li>
+    </ul>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">💻 System Requirements</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Vesper is lightweight, so it runs comfortably on almost any computer made in the last decade.</p>
+    <div style="background:#f4f6fa;border-radius:12px;padding:22px 24px;">
+      <ul style="font-size:17px;line-height:1.85;color:#3d4a5c;margin:0;padding-left:22px;">
+        <li>Windows 10 or Windows 11 (64-bit)</li>
+        <li>4 GB of RAM or more</li>
+        <li>250 MB of free disk space</li>
+        <li>An internet connection for the download and for loading new content</li>
+        <li>A screen resolution of 1280 × 720 or higher</li>
+      </ul>
+    </div>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:16px 0 0 0;">If your computer meets these basics, you will barely notice Vesper running at all — it stays quietly out of the way until you open it.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🖱️ Your First Five Minutes</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Open Vesper the same way you open any other program — double-click its icon. The first screen you see is your library, which starts empty. That is expected.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Here is a comfortable way to begin:</p>
+    <ol style="font-size:17px;line-height:1.8;color:#3d4a5c;margin:0 0 16px 0;padding-left:24px;">
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Paste your first link.</strong> Copy any article address from your browser and drop it into Vesper. It appears in your library within a second or two.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Open it and read.</strong> Click the item to see the clean reading view. Notice there are no sidebars competing for your attention.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Create one folder.</strong> Give it a name that means something to you — “Weekend,” “Work Ideas,” or “Recipes” all work well.</li>
+      <li style="margin-bottom:10px;"><strong style="color:#121a29;">Add a second item tomorrow.</strong> Vesper becomes genuinely useful once about a dozen things live inside it, and that happens fast.</li>
+      <li style="margin-bottom:0;"><strong style="color:#121a29;">Close it and reopen it.</strong> You will find everything exactly where you left it, including the page you were reading.</li>
+    </ol>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">There is no complicated account setup required to start using the app locally. You can be reading your first saved article within a minute of launching it.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🗂️ Organizing Without the Busywork</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">The biggest reason people abandon a reading app is that keeping it tidy starts to feel like a second job. Vesper is designed to avoid that trap. Every item you add is saved automatically, so the default state of your library is already correct — you never have to file something before it disappears.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">When you do want structure, keep it light. A good rule is to start with three folders at most and let new ones appear naturally over time, once you notice a pattern in what you save. Tags are even cheaper: one or two words on an item, used only when they genuinely help you find it later.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Search does the heavy lifting. Because Vesper indexes the full text of everything in your library, you can recall an item by typing any phrase you remember from it — a person's name, a word from the headline, or a sentence you highlighted. This means you can be generous about saving things without worrying that your library will become impossible to navigate.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">If you ever feel your collection has grown noisy, sort by oldest first and remove what no longer matters to you. Twenty minutes of pruning once a year is enough to keep the whole thing feeling fresh.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🛠️ Troubleshooting Common Issues</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">The download page will not open.</strong> Try copying the address into a different browser, or check that your internet connection is working by loading another site first. Corporate and school networks sometimes block file-hosting pages.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">The download stops partway through.</strong> This is almost always a connection hiccup rather than a problem with the file. Close the tab, return to the same page, and start again. Do not open two downloads of the same file at once.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">Windows shows a blue warning screen.</strong> This is a standard Windows safeguard for software it has not seen before. Click “More info,” review what it says, and then choose to run the file if you obtained it from the official release page.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">Vesper opens but seems slow the first time.</strong> The very first launch builds its internal index, which can take a few moments on older hardware. Subsequent launches are immediate.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;"><strong style="color:#121a29;">An article will not load.</strong> Some websites actively refuse to display their content outside a browser. In that case, open the item in your default browser directly — the link is saved either way, so nothing is lost.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">❓ Frequently Asked Questions</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">Is Vesper free?</strong> Yes. The application is distributed at no cost through the official releases page.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">Do I need to install anything else first?</strong> No. Vesper is a self-contained application for Windows 10 and 11.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">Where do I get updates?</strong> Return to the same releases page. New versions are posted there, and replacing your existing copy keeps your library intact.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;"><strong style="color:#121a29;">Will it work on a Mac?</strong> Vesper is described as a native iOS content hub and this guide covers the Windows download. The releases page shows exactly which builds are available at any given time.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;"><strong style="color:#121a29;">Can I use it without the internet?</strong> You can read anything already saved and opened. New links need a connection to load.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">🔒 Privacy and Your Data</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 16px 0;">Your library belongs to you. Vesper keeps your saved items on your own computer, and nothing about what you read is sold or shared with advertisers. There are no tracking pixels inside the reading view, no behavioural profiles, and no recommendation engine quietly reshaping what you see.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">When you remove an item, it is removed. When you stop using the app, your collection stays exactly where you left it, ready if you return. That simplicity is part of the point.</p>
+  </section>
+
+  <section style="background:#ffffff;border-radius:18px;padding:32px;margin:22px 0 0 0;box-shadow:0 4px 18px rgba(18,26,41,0.07);">
+    <h2 style="font-size:27px;font-weight:750;letter-spacing:-0.4px;margin:0 0 16px 0;color:#121a29;">💡 Getting More Out of Vesper</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;">Treat the library as a place for things you actually intend to read, not a graveyard for everything you scroll past. A hundred items you will genuinely finish is worth more than ten thousand you will not.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 14px 0;">Save generously during the week and clear the queue on a quiet afternoon. Vesper makes both halves of that habit easy: adding is instant, and reading is calm.</p>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0;">Keep the window open on a second monitor, or leave it running in the background and return to it when you have a spare moment. The app is built to wait for you rather than demand your attention.</p>
+  </section>
+
+  <section style="background:#eef1f8;border-radius:18px;padding:32px;margin:28px 0 0 0;text-align:center;">
+    <h2 style="font-size:24px;font-weight:750;letter-spacing:-0.3px;margin:0 0 14px 0;color:#121a29;">📥 Ready to Get Started?</h2>
+    <p style="font-size:17px;line-height:1.75;color:#3d4a5c;margin:0 0 22px 0;">Visit this link to download the application, then open it the same way you would open any other program on your computer.</p>
+    <a href="https://github.com/wer4gt4gcxydwrtv/Vesper/releases" style="display:inline-block;background:linear-gradient(135deg,#5b4df0 0%,#00bfa6 100%);color:#ffffff;text-decoration:none;font-size:19px;font-weight:700;padding:19px 44px;border-radius:14px;box-shadow:0 12px 28px rgba(91,77,240,0.34);">⬇️ Download Vesper</a>
+  </section>
+
+</div>
+
 </body>
 </html>
