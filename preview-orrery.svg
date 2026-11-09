@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="KrewOS — Self-Hosted AI Agent Crew and 3D Observatory">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060B" />
+      <stop offset="50%" stop-color="#0A0D18" />
+      <stop offset="100%" stop-color="#06070D" />
+    </linearGradient>
+    <radialGradient id="orreryGlow" cx="68%" cy="52%" r="48%">
+      <stop offset="0%" stop-color="#FFB340" stop-opacity="0.22" />
+      <stop offset="38%" stop-color="#E05A1B" stop-opacity="0.09" />
+      <stop offset="72%" stop-color="#38BDF8" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#07080F" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="sunCore" cx="44%" cy="42%" r="56%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="35%" stop-color="#FFBE44" />
+      <stop offset="75%" stop-color="#E05A1B" />
+      <stop offset="100%" stop-color="#7A1C05" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="orbitRing1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB340" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#8FD3FF" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.65" />
+    </linearGradient>
+    <linearGradient id="badgeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFB340" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.45" />
+    </linearGradient>
+  </defs>
+
+  <!-- Deep Space Canvas -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#orreryGlow)" />
+
+  <!-- Subtle Starfield -->
+  <g fill="#E8EBF7" opacity="0.45">
+    <circle cx="92" cy="78" r="1.2" />
+    <circle cx="240" cy="54" r="1.5" />
+    <circle cx="480" cy="88" r="1.1" />
+    <circle cx="620" cy="48" r="1.6" />
+    <circle cx="1060" cy="70" r="1.4" />
+    <circle cx="1140" cy="180" r="1.2" />
+    <circle cx="590" cy="560" r="1.3" />
+    <circle cx="1090" cy="555" r="1.5" />
+    <circle cx="740" cy="112" r="1.1" />
+    <circle cx="965" cy="590" r="1.2" />
+  </g>
+
+  <!-- Outer Frame -->
+  <rect x="20" y="20" width="1160" height="590" rx="18" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.5" />
+
+  <!-- LEFT COLUMN: Value Proposition & Architecture Pillars -->
+  <g transform="translate(58, 66)">
+    <!-- Kicker Pill -->
+    <rect x="0" y="0" width="446" height="32" rx="16" fill="#101426" stroke="url(#badgeBorder)" stroke-width="1.2" />
+    <circle cx="18" cy="16" r="4.5" fill="#3FE0A0" />
+    <text x="32" y="21" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="12.5" font-weight="600" fill="#FFD093" letter-spacing="0.4">
+      LOCAL-FIRST AI CREW · 1 DISTROLESS CONTAINER
+    </text>
+
+    <!-- Brand & Headline -->
+    <text x="0" y="92" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="#F5F7FF" letter-spacing="-1.2">
+      KrewOS
+    </text>
+    <text x="222" y="92" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="20" font-weight="600" fill="#FFB340">
+      v0.1.0
+    </text>
+
+    <text x="0" y="140" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" fill="#DCE3FA" letter-spacing="-0.3">
+      Run an autonomous AI team on your machine.
+    </text>
+    <text x="0" y="174" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16.5" fill="#9BA5C9">
+      Coordinate specialist agents in a live 3D Observatory with
+    </text>
+    <text x="0" y="198" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="16.5" fill="#9BA5C9">
+      isolated Linux terminals, live Chromium co-browsing, and BYOK.
+    </text>
+
+    <!-- 4 Technical Differentiator Cards -->
+    <g transform="translate(0, 228)">
+      <rect x="0" y="0" width="470" height="54" rx="10" fill="#0E1222" fill-opacity="0.9" stroke="#FFB340" stroke-opacity="0.32" />
+      <text x="18" y="23" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700" fill="#FFB340">
+        ☉ HELIOS TEAM ROOMS (CIRCLES) &amp; WHISPERS
+      </text>
+      <text x="18" y="42" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#B5BFE0">
+        Lead delegation, peer-to-peer backchannel &amp; instant preemption
+      </text>
+
+      <rect x="0" y="66" width="470" height="54" rx="10" fill="#0E1222" fill-opacity="0.9" stroke="#8FD3FF" stroke-opacity="0.32" />
+      <text x="18" y="89" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700" fill="#8FD3FF">
+        ♁ LIVE CHROMIUM BROWSER &amp; LINUX WORKSPACES
+      </text>
+      <text x="18" y="108" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#B5BFE0">
+        1-click browser takeover (2FA/login), PTY terminals &amp; SKILL.md
+      </text>
+
+      <rect x="0" y="132" width="470" height="54" rx="10" fill="#0E1222" fill-opacity="0.9" stroke="#3FE0A0" stroke-opacity="0.32" />
+      <text x="18" y="155" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13" font-weight="700" fill="#3FE0A0">
+        ⛨ HARDENED RUST + DISTROLESS CAGE
+      </text>
+      <text x="18" y="174" font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" font-size="13.5" fill="#B5BFE0">
+        Per-agent UIDs (20001+), ChaCha20 Vault, zero docker.sock
+      </text>
+    </g>
+
+    <!-- Bottom Command Bar -->
+    <g transform="translate(0, 444)">
+      <rect x="0" y="0" width="470" height="44" rx="8" fill="#080A12" stroke="#FFFFFF" stroke-opacity="0.14" />
+      <text x="16" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13.5" fill="#8FD3FF">
+        $
+      </text>
+      <text x="32" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="13.5" fill="#EEF1FB">
+        ghcr.io/krewos/krewos · krewos.github.io
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: 3D Cosmic Orrery & Live Telemetry HUD -->
+  <g transform="translate(845, 315)">
+    <!-- Tilted Orbital Planes -->
+    <g transform="rotate(-17)">
+      <ellipse rx="285" ry="118" fill="none" stroke="url(#orbitRing1)" stroke-width="1.8" stroke-dasharray="7 9" />
+      <ellipse rx="210" ry="84" fill="none" stroke="#8FD3FF" stroke-opacity="0.38" stroke-width="1.6" />
+      <ellipse rx="132" ry="52" fill="none" stroke="#FFB340" stroke-opacity="0.52" stroke-width="2" />
+
+      <!-- Specialist 1: Forge (Linux / Rust Systems) -->
+      <g transform="translate(-124, -18)">
+        <circle r="22" fill="#F59E0B" fill-opacity="0.2" />
+        <circle r="11" fill="#FBBF24" />
+        <circle cx="-3" cy="-3" r="3.5" fill="#FEF3C7" fill-opacity="0.8" />
+      </g>
+
+      <!-- Specialist 2: Lyra (Browser / Research) -->
+      <g transform="translate(182, 40)">
+        <circle r="28" fill="#38BDF8" fill-opacity="0.2" />
+        <circle r="14" fill="#8FD3FF" />
+        <ellipse rx="24" ry="7.5" fill="none" stroke="#8FD3FF" stroke-opacity="0.75" stroke-width="1.8" transform="rotate(22)" />
+      </g>
+
+      <!-- Specialist 3: Aegis (Security / Audit) -->
+      <g transform="translate(-240, 64)">
+        <circle r="24" fill="#FB923C" fill-opacity="0.2" />
+        <circle r="12.5" fill="#EA580C" />
+        <circle cx="19" cy="-11" r="4" fill="#FDE047" />
+      </g>
+
+      <!-- Specialist 4: Vega (Memory / Routines) -->
+      <g transform="translate(96, -74)">
+        <circle r="19" fill="#A855F7" fill-opacity="0.22" />
+        <circle r="9.5" fill="#C084FC" />
+      </g>
+    </g>
+
+    <!-- Central Star: Helios (Circle Lead) -->
+    <circle cx="0" cy="0" r="74" fill="url(#sunCore)" />
+    <circle cx="0" cy="0" r="42" fill="#FFBE44" />
+    <circle cx="-13" cy="-13" r="14" fill="#FFFBEB" fill-opacity="0.8" />
+  </g>
+
+  <!-- HUD Telemetry Callouts on the Orrery -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace">
+    <!-- Callout 1: Helios -->
+    <g transform="translate(590, 74)">
+      <rect width="268" height="58" rx="10" fill="#0D1020" fill-opacity="0.92" stroke="#FFB340" stroke-opacity="0.5" stroke-width="1.3" />
+      <text x="16" y="24" font-size="13" font-weight="700" fill="#FFB340">☉ HELIOS · CIRCLE LEAD</text>
+      <text x="16" y="44" font-size="12" fill="#B5BFE0">Delegating to @Forge &amp; @Lyra</text>
+    </g>
+
+    <!-- Callout 2: Lyra Live Browser -->
+    <g transform="translate(876, 428)">
+      <rect width="264" height="58" rx="10" fill="#0D1020" fill-opacity="0.92" stroke="#8FD3FF" stroke-opacity="0.5" stroke-width="1.3" />
+      <text x="16" y="24" font-size="13" font-weight="700" fill="#8FD3FF">♁ LYRA · LIVE CHROMIUM</text>
+      <text x="16" y="44" font-size="12" fill="#B5BFE0">Isolated profile · Takeover ready</text>
+    </g>
+
+    <!-- Callout 3: Forge Linux Sandbox -->
+    <g transform="translate(576, 488)">
+      <rect width="268" height="58" rx="10" fill="#0D1020" fill-opacity="0.92" stroke="#FBBF24" stroke-opacity="0.45" stroke-width="1.3" />
+      <text x="16" y="24" font-size="13" font-weight="700" fill="#FBBF24">♂ FORGE · UID 20001 SANDBOX</text>
+      <text x="16" y="44" font-size="12" fill="#B5BFE0">/workspace/forge · PTY + Vault</text>
+    </g>
+  </g>
+</svg>

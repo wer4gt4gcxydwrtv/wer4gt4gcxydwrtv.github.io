@@ -9,6 +9,18 @@
       content="Interactive live demo of KrewOS: coordinate an AI agent crew, inspect workspaces, and explore the Observatory directly in your browser."
     />
     <meta name="theme-color" content="#07080d" />
+    <meta property="og:title" content="KrewOS — Interactive 3D Observatory Demo" />
+    <meta property="og:description" content="Explore the KrewOS 3D Observatory directly in your browser (WebAssembly): coordinate Helios and specialist agents, inspect terminals, browsers, and the secret vault." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://krewos.github.io/demo.html" />
+    <meta property="og:image" content="https://krewos.github.io/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="KrewOS — Interactive 3D Observatory Demo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KrewOS — Interactive 3D Observatory Demo" />
+    <meta name="twitter:description" content="Try KrewOS directly in your browser with zero install: interactive 3D solar system Observatory powered by Rust &amp; WebAssembly." />
+    <meta name="twitter:image" content="https://krewos.github.io/og-image.png" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link
       rel="preload"
@@ -219,6 +231,9 @@
       <button type="button" class="wasm-sandbox-bar__btn" id="wasm-reset-btn" title="Reset in-memory crew &amp; transcripts">
         Reset
       </button>
+      <a href="https://github.com/krewos/krewos" target="_blank" rel="noopener" class="wasm-sandbox-bar__btn" id="wasm-github-link" title="Star KrewOS on GitHub">
+        ★ Star on GitHub
+      </a>
       <a href="index.html#quickstart" class="wasm-sandbox-bar__btn wasm-sandbox-bar__btn--accent" id="wasm-docs-link">
         ← Quickstart
       </a>
